@@ -1,0 +1,133 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+body {
+    background: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+
+.header {
+    text-align: center;
+    margin: 20px;
+    font-size: large;
+}
+
+.box-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.box-container > div {
+	flex-grow: 1;
+	width: 33%;
+    height: 100px;
+    background: #efefef;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 4em;
+  color: #fff;
+}
+
+.main-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.box-container {
+    position: relative;
+    width:500px;
+}
+
+.action-container {
+    position: relative;
+    width: 280px;
+    height: 50px;
+    padding: 8px;
+}
+
+.action-container > button {
+    text-transform: uppercase;
+    padding: 10px;
+    background: #77c3db;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 5px;
+    width: 50%;
+    margin: 4px;
+    outline: none;
+    border: none;
+    box-shadow: 0 4px #4090aa;
+}
+
+.action-container > button:hover {background-color: #72c3dc}
+
+.action-container > button:active {
+  background-color: #72c3dc;
+  box-shadow: 0 5px #4090aa;
+  transform: translateY(2px);
+}
+
+.author {
+    font-style: italic;
+    text-align: center;
+    margin: 10px;
+    font-size: small;
+}
+
+@media screen and (max-width:375px){
+    body {
+        background: #ffffff;
+    }
+
+    .header {
+        margin: 0px;
+        padding: 10px;
+        background: #333333;
+        color: #fff;
+    }
+
+    .main-container {
+        justify-content: space-between;
+    }
+
+    .box-container {
+        order:2;
+    }
+
+    .box-container > div {
+        background: #efefef;
+    }
+
+    .action-container {
+        order:1;
+        height: 40px;
+        text-align: center;
+    }
+
+    .action-container > button {
+        width: 45%;
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 959px) and (min-width: 376px) {
+    .action-container > button {
+        width: 45%;
+    }
+  }
+
+
+
+
+
+
+
+
